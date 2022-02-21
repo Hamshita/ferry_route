@@ -4,14 +4,14 @@ base:
   target_col: TARGET
 
 data_source:
-  s3_source: data_given/ferry_route_csv.csv
+  s3_source: data_given/titanic.csv
 
 load_data:
-  raw_dataset_csv: data/raw/ferry_route_csv.csv
+  raw_dataset_csv: data/raw/titanic.csv
 
 split_data:
-  train_path: data/processed/train_ferry_route_csv.csv
-  test_path: data/processed/test_ferry_route_csv.csv
+  train_path: data/processed/train_titanic.csv
+  test_path: data/processed/test_titanic.csv
   test_size: 0.2
 
 estimators:

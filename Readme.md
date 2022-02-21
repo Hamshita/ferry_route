@@ -1,19 +1,16 @@
-create env
-
+create env:
 pip install pipenv
 
 pipenv install
 
-activate environment
-
+activate environment:
 pipenv shell
 
-Create Requirement File
-install the requirements
-
+Create Requirement File:
+install the requirements:
 pip install -r requirements.txt
 
-download the data from
+download the data from:
 
 https://data.world/marineinstitute/af72802a-fb7a-46ef-9b98-d21421954fdd/workspace/file?filename=download-csv-6.csv
 
@@ -39,10 +36,10 @@ git branch -M main
 git push origin main
 
 
-tox command -
+tox command:
 
 tox
-for rebuilding -
+for rebuilding:
 
 tox -r 
 pytest command

@@ -12,14 +12,13 @@ pip install -r requirements.txt
 
 download the data from:
 
-https://data.world/marineinstitute/af72802a-fb7a-46ef-9b98-d21421954fdd/workspace/file?filename=download-csv-6.csv
-
+https://www.kaggle.com/ibrahimelsayed182/titanic-dataset
 
 git init
 
 dvc init
  
-dvc add data_given/ferry_route_csv.csv
+dvc add data_given/titanic.csv
 
 git add .
 
@@ -29,7 +28,7 @@ oneliner updates for readme
 
 git add . && git commit -m "update Readme.md"
 
-git remote add origin https://github.com/Hamshita/ferry_route.git
+git remote add origin https://github.com/Hamshita/titanic.git
 
 git branch -M main
 

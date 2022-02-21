@@ -1,0 +1,34 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/titanic.csv
+      md5: 7fddb28014a22821876bd2190555bae7
+      size: 35212
+    - path: src/get_data.py
+      md5: db7730736da9e3274083bc90eccf7000
+      size: 682
+    - path: src/load_data.py
+      md5: a505b36ecfbd89f6747a7432b2157607
+      size: 648
+    outs:
+    - path: data/raw/titanic.csv
+      md5: c740c210293efb5b0cbebb879a62841c
+      size: 36912
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - path: data/raw/titanic.csv
+      md5: c740c210293efb5b0cbebb879a62841c
+      size: 36912
+    - path: src/split_data.py
+      md5: d0b79a27bd3db7325015bcec9ce3f589
+      size: 1099
+    outs:
+    - path: data/processed/test_titanic.csv
+      md5: a668e173a8c4510b4d785c8237da8f0f
+      size: 7496
+    - path: data/processed/train_titanic.csv
+      md5: 082298fa472ba06a90f04aa96cd77927
+      size: 29476

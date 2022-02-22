@@ -1,7 +1,7 @@
 base:
   project: wheat_seeds-project
   random_state: 42
-  target_col: TARGET
+  target_col: Type
 
 data_source:
   s3_source: data_given/seeds.csv

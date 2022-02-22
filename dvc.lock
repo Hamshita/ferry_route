@@ -10,8 +10,8 @@ stages:
       md5: db7730736da9e3274083bc90eccf7000
       size: 682
     - path: src/load_data.py
-      md5: a505b36ecfbd89f6747a7432b2157607
-      size: 648
+      md5: bf9ea6e0fcd2ef3899ba4c7d8292dec1
+      size: 666
     outs:
     - path: data/raw/titanic.csv
       md5: c740c210293efb5b0cbebb879a62841c

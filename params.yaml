@@ -1,17 +1,17 @@
 base:
-  project: titanic-project
+  project: wheat_seeds-project
   random_state: 42
   target_col: TARGET
 
 data_source:
-  s3_source: data_given/titanic.csv
+  s3_source: data_given/seeds.csv
 
 load_data:
-  raw_dataset_csv: data/raw/titanic.csv
+  raw_dataset_csv: data/raw/seeds.csv
 
 split_data:
-  train_path: data/processed/train_titanic.csv
-  test_path: data/processed/test_titanic.csv
+  train_path: data/processed/train_seeds.csv
+  test_path: data/processed/test_seeds.csv
   test_size: 0.2
 
 estimators:

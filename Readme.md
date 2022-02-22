@@ -12,13 +12,13 @@ pip install -r requirements.txt
 
 download the data from:
 
-https://www.kaggle.com/ibrahimelsayed182/titanic-dataset
+https://www.kaggle.com/jmcaro/wheat-seedsuci
 
 git init
 
 dvc init
  
-dvc add data_given/titanic.csv
+dvc add data_given/seeds.csv
 
 git add .
 
@@ -28,7 +28,7 @@ oneliner updates for readme
 
 git add . && git commit -m "update Readme.md"
 
-git remote add origin https://github.com/Hamshita/titanic.git
+git remote add origin https://github.com/Hamshita/wheat_seeds.git
 
 git branch -M main
 

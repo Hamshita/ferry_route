@@ -3,9 +3,9 @@ stages:
   load_data:
     cmd: python src/load_data.py --config=params.yaml
     deps:
-    - path: data_given/titanic.csv
-      md5: 7fddb28014a22821876bd2190555bae7
-      size: 35212
+    - path: data_given/seeds.csv
+      md5: 310a78ab079aa5ac71a476952ff9ddfc
+      size: 9125
     - path: src/get_data.py
       md5: db7730736da9e3274083bc90eccf7000
       size: 682
@@ -13,22 +13,22 @@ stages:
       md5: bf9ea6e0fcd2ef3899ba4c7d8292dec1
       size: 666
     outs:
-    - path: data/raw/titanic.csv
-      md5: c740c210293efb5b0cbebb879a62841c
-      size: 36912
+    - path: data/raw/seeds.csv
+      md5: 310a78ab079aa5ac71a476952ff9ddfc
+      size: 9125
   split_data:
     cmd: python src/split_data.py --config=params.yaml
     deps:
-    - path: data/raw/titanic.csv
-      md5: c740c210293efb5b0cbebb879a62841c
-      size: 36912
+    - path: data/raw/seeds.csv
+      md5: 310a78ab079aa5ac71a476952ff9ddfc
+      size: 9125
     - path: src/split_data.py
       md5: d0b79a27bd3db7325015bcec9ce3f589
       size: 1099
     outs:
-    - path: data/processed/test_titanic.csv
-      md5: a668e173a8c4510b4d785c8237da8f0f
-      size: 7496
-    - path: data/processed/train_titanic.csv
-      md5: 082298fa472ba06a90f04aa96cd77927
-      size: 29476
+    - path: data/processed/test_seeds.csv
+      md5: 4ec48678b6e54f975f85d537e33fb13c
+      size: 1907
+    - path: data/processed/train_seeds.csv
+      md5: aa8a4254ba9ed915c061ab241f65f24d
+      size: 7308

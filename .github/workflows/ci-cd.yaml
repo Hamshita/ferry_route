@@ -45,7 +45,7 @@ jobs:
 
     - name: Building Docker Image
       run: |
-        docker build . --file Dockerfile --tag vishnunagineni/iriscicd
+        docker build . --file Dockerfile --tag hamshita/wheatseedcicd
     - name: Pushing docker image
       run: |
-        docker push ${{secrets.DOCKER_USERNAME}}/iriscicd
+        docker push ${{secrets.DOCKER_USERNAME}}/wheatseedcicd

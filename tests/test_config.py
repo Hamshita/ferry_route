@@ -39,8 +39,8 @@ input_data = {
 }
 
 Type_range = {
-    "min": str(1),
-    "max": str(3)
+    "min": 1,
+    "max": 3
 }
 
 def test_form_response_correct_range(data=input_data["correct_range"]):

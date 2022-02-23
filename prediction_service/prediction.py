@@ -32,6 +32,7 @@ def predict(data):
     prediction = model.predict(data).tolist()[0]
     try:
         if 1 <= prediction <= 3:
+            print(prediction)
             return prediction
         else:
             raise NotInRange

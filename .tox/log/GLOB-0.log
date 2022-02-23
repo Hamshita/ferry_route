@@ -1,0 +1,16 @@
+action: GLOB, msg: packaging
+cwd: C:\Users\hk97820\endtoendmlflow
+cmd: 'C:\Users\hk97820\.virtualenvs\endtoendmlflow-3vHtml_p\Scripts\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
+running sdist
+running egg_info
+writing src.egg-info\PKG-INFO
+writing dependency_links to src.egg-info\dependency_links.txt
+writing top-level names to src.egg-info\top_level.txt
+reading manifest file 'src.egg-info\SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' should be supplied too
+
+copying files to src-0.0.1...
+Writing src-0.0.1\setup.cfg

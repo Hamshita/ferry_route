@@ -28,7 +28,7 @@ input_data = {
     },
 
     "incorrect_col":
-    {"Area": 11, 
+    {"area": 11, 
     "Perimeter": 15, 
     "Compactness": 0.89, 
     "Kernel.Length": 5.67, 
